@@ -1,0 +1,26 @@
+{
+  "name": "erctokens",
+  "version": "1.0.0",
+  "description": "token implementation for various erc standards",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate": "truffle migrate",
+    "console": "truffle console",
+    "ganache": "npx ganache-cli --deterministic",
+    "script": "npx truffle exec --network development ./scripts/tokenInteraction.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tanishq Jasoria",
+  "license": "ISC",
+  "devDependencies": {
+    "ganache-cli": "^6.12.2"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "@openzeppelin/test-helpers": "^0.5.11"
+  }
+}
